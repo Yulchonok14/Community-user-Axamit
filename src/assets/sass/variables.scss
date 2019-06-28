@@ -1,0 +1,42 @@
+$base-font-size: 16;
+
+$fhd-min: 1280px;
+$hd-max: 1279px;
+$hd-min: 720px;
+$sd-max: 719px;
+$sd-min: 320px;
+
+$desktop-min: 1280px;
+$tablet-max: 1279px;
+$tablet-min: 768px;
+$phone-max: 767px;
+$small-tablet-max: 1024px;
+$small-phone-max: 479px;
+$phone-min: 320px;
+
+$footer-logo-width: 222;
+$footer-logo-height: 26;
+
+$footer-height: 118;
+$desktop-footer-height: 118 + $footer-logo-height + 15;
+$small-footer-height: 127 + $footer-logo-height + 25;
+
+$p-font: "Futura New Light";
+$logo-font: "SF UI Text";
+$schedule-h1-font: "Circe Extra Light";
+$schedule-h2-font: "Circe Bold";
+$registration-field-font: "Futura New Medium";
+
+$bg-color: #140f10;
+$accent-color: #f58220;
+$p-link-color: $accent-color;
+$registration-bg-color: #ffffff;
+$registration-field-border-color: rgba(79, 79, 79, 0.2);
+$registration-field-border-focused-color: $accent-color;
+$logo-text-color: rgba(255, 255, 255, .5);
+$schedule-text-color: #ffffff;
+$registration-text-color: #000000;
+$registration-field-text-color: rgba(0, 0, 0, 1.0);
+$registration-field-placeholder-color: rgba(0, 0, 0, 0.4);
+$registration-error-text-color: rgba(255, 0, 0, 0.8);
+$registration-error-placeholder-color: rgba(255, 0, 0, 0.4);

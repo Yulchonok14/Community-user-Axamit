@@ -1,0 +1,120 @@
+<section class="registration-form">
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-group">
+      <p translate [translateParams]="{meetupName: meetupName.toLowerCase()}">formClarification</p>
+
+      <p translate>formClarificationAddition</p>
+    </div>
+    <div class="form-group">
+      <input
+        id="name"
+        name="name"
+        class="form-control"
+        type="text"
+        required
+        ngModel
+        #name="ngModel"
+        placeholder="{{'name' | translate}}"
+      >
+      <span
+        class="help-block"
+        *ngIf="!name.valid && (name.touched || error)"
+        translate
+      >
+        helpBlockForName
+    </span>
+    </div>
+    <div class="form-group">
+      <input
+        id="surname"
+        name="surname"
+        class="form-control"
+        type="text"
+        required
+        ngModel
+        #surname="ngModel"
+        placeholder="{{'surname' | translate}}"
+      >
+    <span
+      class="help-block"
+      *ngIf="!surname.valid && (surname.touched || error)"
+      translate
+    >
+      helpBlockForSurname
+    </span>
+    </div>
+    <div class="form-group">
+      <input
+        id="occupation"
+        name="occupation"
+        class="form-control"
+        type="text"
+        required
+        ngModel
+        #occupation="ngModel"
+        placeholder="{{'occupation' | translate}}"
+      >
+    <span
+      class="help-block"
+      *ngIf="!occupation.valid && (occupation.touched || error)"
+      translate
+    >
+      helpBlockForOccupation
+    </span>
+    </div>
+    <div class="form-group">
+      <input
+        id="company"
+        name="company"
+        class="form-control"
+        type="text"
+        required
+        ngModel
+        #company="ngModel"
+        placeholder="{{'company' | translate}}"
+      >
+      <span
+        class="help-block"
+        *ngIf="!company.valid && (company.touched || error)"
+        translate
+      >
+        helpBlockForCompany
+      </span>
+    </div>
+    <div class="form-group">
+      <input
+        id="email"
+        name="email"
+        class="form-control"
+        type="text"
+        required
+        email
+        ngModel
+        #email="ngModel"
+        placeholder="{{'emailPattern' | translate}}"
+      >
+      <span
+        class="help-block"
+        *ngIf="!email.valid && (email.touched || error)"
+        translate
+      >
+        helpBlockForEmail
+      </span>
+    </div>
+    <div class="form-group">
+      <div class="checkbox" [ngClass]="{checked: checked}" (click)="checked = !checked; onToggle(checked)">
+        <span class="mark"></span>
+        <span class="label" translate>subscribeText</span>
+      </div>
+    </div>
+    <span
+      class="help-block"
+      *ngIf="error"
+      [innerHtml]="'formError' | translate"
+    >
+    </span>
+    <div class="form-group">
+      <button type="submit" class="b-button" translate>registerButton</button>
+    </div>
+  </form>
+</section>

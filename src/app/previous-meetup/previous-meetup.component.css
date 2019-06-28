@@ -1,0 +1,143 @@
+.s-page-content {
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .s-page-content .m-agenda {
+    margin-top: 2.5rem;
+    width: 100%; }
+    .s-page-content .m-agenda .s-nav {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-bottom: 2.1875rem; }
+      .s-page-content .m-agenda .s-nav .s-back-link {
+        font-family: "Futura New Light", serif;
+        font-size: 1.75rem;
+        line-height: 1.75rem;
+        padding-left: 1.925rem;
+        position: relative;
+        color: #d9d9d9;
+        text-decoration: none; }
+        .s-page-content .m-agenda .s-nav .s-back-link:before {
+          position: absolute;
+          left: 0;
+          display: inline-block;
+          content: ' ';
+          width: 1.75rem;
+          height: 1.75rem;
+          background-image: url(../../assets/images/map-marker.svg);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat; }
+      .s-page-content .m-agenda .s-nav .s-nav-meetup {
+        text-align: end;
+        position: absolute;
+        right: 0; }
+        .s-page-content .m-agenda .s-nav .s-nav-meetup .s-left-link, .s-page-content .m-agenda .s-nav .s-nav-meetup .s-right-link {
+          margin-left: 20px;
+          display: inline-block;
+          font-family: "Futura New Light", serif;
+          font-size: 1.75rem;
+          line-height: 1.75rem;
+          padding-left: 1.925rem;
+          position: relative;
+          color: #d9d9d9;
+          text-decoration: none; }
+        .s-page-content .m-agenda .s-nav .s-nav-meetup .s-left-link:before, .s-page-content .m-agenda .s-nav .s-nav-meetup .s-right-link:after {
+          vertical-align: bottom;
+          display: inline-block;
+          margin-right: 5px;
+          content: ' ';
+          width: 1.75rem;
+          height: 1.75rem;
+          background-image: url(../../assets/images/map-marker.svg);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat; }
+        .s-page-content .m-agenda .s-nav .s-nav-meetup .s-right-link:after {
+          margin-right: 0;
+          margin-left: 5px;
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg); }
+    .s-page-content .m-agenda .s-content {
+      display: flex;
+      background: #ffffff;
+      padding: 2.1875rem 3.125rem 0.625rem 3.125rem;
+      margin: 0 auto;
+      flex-direction: column; }
+      .s-page-content .m-agenda .s-content .s-heading {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2.1875rem; }
+        .s-page-content .m-agenda .s-content .s-heading .s-date {
+          display: block;
+          margin: 0.9375rem 0;
+          margin-top: 0;
+          font-family: "Futura New Book", serif;
+          font-size: 1.75rem;
+          line-height: 2.1rem; }
+        .s-page-content .m-agenda .s-content .s-heading .s-event-link {
+          display: block;
+          font-family: "Futura New Book", serif;
+          font-size: 1.6875rem;
+          line-height: 1.6875rem;
+          color: #000000;
+          text-decoration: none;
+          padding-left: 1.85625rem;
+          position: relative; }
+          .s-page-content .m-agenda .s-content .s-heading .s-event-link .s-icon:before {
+            top: 0;
+            left: 0;
+            position: absolute;
+            display: inline-block;
+            content: ' ';
+            width: 1.6875rem;
+            height: 1.6875rem;
+            background-image: url(../../assets/images/map-marker.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat; }
+      .s-page-content .m-agenda .s-content .s-title {
+        display: block;
+        margin: 0.9375rem 0;
+        font-family: "Circe Bold", serif;
+        font-size: 1.75rem;
+        line-height: 2.1rem;
+        text-transform: uppercase; }
+      .s-page-content .m-agenda .s-content .s-archive-photos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -2.5rem;
+        margin-right: -2.5rem; }
+        .s-page-content .m-agenda .s-content .s-archive-photos .s-photo {
+          overflow: hidden;
+          position: relative;
+          display: block; }
+          .s-page-content .m-agenda .s-content .s-archive-photos .s-photo .s-facebook {
+            font-family: "Futura New Book", serif;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            color: #f58220;
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            z-index: 9;
+            line-height: normal; }
+          .s-page-content .m-agenda .s-content .s-archive-photos .s-photo img {
+            width: 360px; }
+          .s-page-content .m-agenda .s-content .s-archive-photos .s-photo #mask {
+            background-color: #000;
+            opacity: .1;
+            -moz-opacity: .1;
+            filter: alpha(opacity=10) black; }
+
+/*# sourceMappingURL=previous-meetup.component.css.map */

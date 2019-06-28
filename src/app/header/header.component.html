@@ -1,0 +1,36 @@
+<div class="m-header">
+  <div class="s-logo">
+    <a routerLink="/"><img src="../../assets/images/logo.svg"></a>
+  </div>
+  <div class="s-logo-text">aem community</div>
+
+  <div class="s-header-right">
+    <div class="s-lang-switcher">
+      <a class="s-lang eng" [ngClass]="{active: !activeRus}" (click)="switchLanguage('en')"><span class="s-long">English</span><span class="s-short">EN</span></a>
+      <span> | </span>
+      <a class="s-lang rus" [ngClass]="{active: activeRus}" (click)="switchLanguage('ru')"><span class="s-long">Русский</span><span class="s-short">РУ</span></a>
+    </div>
+
+    <div class="s-hamburger-menu" [ngClass]="{expanded: active}">
+      <div class="s-btn">
+        <button
+          [ngClass]="{'is-active': active}"
+          (click)="active = !active"
+          class="hamburger hamburger--spin"
+          type="button" aria-label="Menu"
+          aria-controls="navigation">
+                            <span class="hamburger-box">
+                              <span class="hamburger-inner"></span>
+                            </span>
+        </button>
+      </div>
+      <div class="s-navigation">
+        <div *ngFor="let archive of archiveNames">
+          <a
+            [routerLink]="['archive', archive.id]"
+            (click)="active = !active"
+          >{{archive.name}} - {{archive.shortLocation}}</a></div>
+      </div>
+    </div>
+  </div>
+</div>

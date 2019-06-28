@@ -1,1 +1,143 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'SF UI Text';
+  src: url("./assets/fonts/SFUIText-Light.eot");
+  src: url("./assets/fonts/SFUIText-Light.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/SFUIText-Light.woff2") format("woff2"), url("./assets/fonts/SFUIText-Light.woff") format("woff"), url("./assets/fonts/SFUIText-Light.ttf") format("truetype"), url("./assets/fonts/SFUIText-Light.svg#SFUIText-Light") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Futura New Light';
+  src: url("./assets/fonts/FuturaNewLight-Reg.eot");
+  src: url("./assets/fonts/FuturaNewLight-Reg.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/FuturaNewLight-Reg.woff2") format("woff2"), url("./assets/fonts/FuturaNewLight-Reg.woff") format("woff"), url("./assets/fonts/FuturaNewLight-Reg.ttf") format("truetype"), url("./assets/fonts/FuturaNewLight-Reg.svg#FuturaNewLight-Reg") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Futura New Demi';
+  src: url("./assets/fonts/FuturaNewDemi-Reg.eot");
+  src: url("./assets/fonts/FuturaNewDemi-Reg.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/FuturaNewDemi-Reg.woff2") format("woff2"), url("./assets/fonts/FuturaNewDemi-Reg.woff") format("woff"), url("./assets/fonts/FuturaNewDemi-Reg.ttf") format("truetype"), url("./assets/fonts/FuturaNewDemi-Reg.svg#FuturaNewDemi-Reg") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Futura New Medium';
+  src: url("./assets/fonts/FuturaNewMedium-Reg.eot");
+  src: url("./assets/fonts/FuturaNewMedium-Reg.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/FuturaNewMedium-Reg.woff2") format("woff2"), url("./assets/fonts/FuturaNewMedium-Reg.woff") format("woff"), url("./assets/fonts/FuturaNewMedium-Reg.ttf") format("truetype"), url("./assets/fonts/FuturaNewMedium-Reg.svg#FuturaNewMedium-Reg") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Futura New Book';
+  src: url("./assets/fonts/FuturaNewBook-Reg.eot");
+  src: url("./assets/fonts/FuturaNewBook-Reg.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/FuturaNewBook-Reg.woff2") format("woff2"), url("./assets/fonts/FuturaNewBook-Reg.woff") format("woff"), url("./assets/fonts/FuturaNewBook-Reg.ttf") format("truetype"), url("./assets/fonts/FuturaNewBook-Reg.svg#FuturaNewBook-Reg") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Circe Bold';
+  src: url("./assets/fonts/Circe-Bold.eot");
+  src: url("./assets/fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Circe-Bold.woff2") format("woff2"), url("./assets/fonts/Circe-Bold.woff") format("woff"), url("./assets/fonts/Circe-Bold.ttf") format("truetype"), url("./assets/fonts/Circe-Bold.svg#Circe-Bold") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Circe Extra Light';
+  src: url("./assets/fonts/Circe-ExtraLight.eot");
+  src: url("./assets/fonts/Circe-ExtraLight.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Circe-ExtraLight.woff2") format("woff2"), url("./assets/fonts/Circe-ExtraLight.woff") format("woff"), url("./assets/fonts/Circe-ExtraLight.ttf") format("truetype"), url("./assets/fonts/Circe-ExtraLight.svg#Circe-ExtraLight") format("svg");
+  font-display: swap; }
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+
+.hamburger-box {
+  width: 35px;
+  height: 24px;
+  display: inline-block; }
+
+.hamburger-inner {
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 35px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+/*
+ * Spin
+ */
+.hamburger--spin .hamburger-inner {
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--spin .hamburger-inner::before {
+    transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
+  .hamburger--spin .hamburger-inner::after {
+    transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+.hamburger--spin.is-active .hamburger-inner {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--spin.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
+  .hamburger--spin.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+/*
+ * Spin Reverse
+ */
+.hamburger--spin-r .hamburger-inner {
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--spin-r .hamburger-inner::before {
+    transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
+  .hamburger--spin-r .hamburger-inner::after {
+    transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+.hamburger--spin-r.is-active .hamburger-inner {
+  transform: rotate(-225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--spin-r.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
+  .hamburger--spin-r.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(90deg);
+    transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+body {
+  background-color: #140f10; }
+
+html {
+  min-height: 100%;
+  line-height: 100%;
+  font-family: sans-serif; }
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 16px; } }
+
+/*# sourceMappingURL=styles.css.map */

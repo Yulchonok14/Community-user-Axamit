@@ -1,0 +1,83 @@
+.registration-form {
+  padding-left: 3.4375rem;
+  padding-right: 4.0625rem;
+  padding-top: 1.25rem; }
+  .registration-form form {
+    background: #ffffff;
+    padding: 2.5rem 3.4375rem; }
+    .registration-form form .help-block {
+      color: rgba(255, 0, 0, 0.8); }
+    .registration-form form .form-group {
+      margin: 1.375rem 0; }
+      .registration-form form .form-group:first-child {
+        margin-top: 0; }
+      .registration-form form .form-group p {
+        padding: 0;
+        margin: 0;
+        font-family: "Futura New Light", serif;
+        color: #000000;
+        font-size: 1.40625rem;
+        line-height: 1.625rem; }
+      .registration-form form .form-group .checkbox {
+        position: relative;
+        min-height: 29px;
+        cursor: pointer;
+        display: flex; }
+        .registration-form form .form-group .checkbox.checked .mark:before {
+          border: 4px solid #ffffff;
+          border-top: none;
+          border-left: none;
+          transform: rotate(45deg); }
+        .registration-form form .form-group .checkbox .mark {
+          background-color: #f5822f;
+          text-align: center;
+          display: block;
+          width: 29px;
+          height: 29px;
+          flex-shrink: 0;
+          position: relative; }
+          .registration-form form .form-group .checkbox .mark:before {
+            content: ' ';
+            width: 10px;
+            height: 14px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -4px;
+            margin-top: -9px;
+            box-sizing: border-box; }
+        .registration-form form .form-group .checkbox .label {
+          line-height: 29px;
+          padding-left: 1.0625rem;
+          color: black;
+          font-family: "Futura New Light", serif;
+          font-size: 1.40625rem;
+          display: block; }
+      .registration-form form .form-group input {
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(79, 79, 79, 0.2);
+        font-family: "Futura New Medium", serif;
+        font-size: 1.375rem;
+        color: black;
+        caret-color: black;
+        height: 3.375rem;
+        padding: 0;
+        text-indent: 1.15625rem;
+        width: 100%;
+        -webkit-appearance: none; }
+        .registration-form form .form-group input:hover {
+          border-color: #f58220; }
+      .registration-form form .form-group .b-button {
+        display: block;
+        font-family: "Futura New Demi", serif;
+        font-size: 1.5rem;
+        line-height: 4.0625rem;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        background-color: #f58220;
+        width: 100%;
+        cursor: pointer; }
+
+/*# sourceMappingURL=registration-form.component.css.map */

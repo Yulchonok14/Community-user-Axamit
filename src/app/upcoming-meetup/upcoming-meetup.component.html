@@ -1,0 +1,12 @@
+<main class="s-page-content">
+  <article class="m-schedule">
+    <h1>{{upcomingMeetup.name}}<br>{{getShortDate()}}, {{meetupTime}}, {{upcomingMeetup.shortLocation}}</h1>
+    <div class="s-text"><p [innerHtml] = "upcomingMeetup.description">/p></div>
+    <p><a href="https://imaguru.by/" target="_blank" class="s-link-button">{{getPlace()}}</a> {{getAddress()}}</p>
+    <div class="s-nav-buttons">
+      <a href="https://goo.gl/ADRWJA" target="_blank" class="s-link-button" translate>mapButton</a>
+    </div>
+  </article>
+  <app-registration-form [meetupName]="upcomingMeetup.name"></app-registration-form>
+</main>
+

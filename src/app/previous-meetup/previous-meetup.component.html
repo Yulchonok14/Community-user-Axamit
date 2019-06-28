@@ -1,0 +1,39 @@
+<main class="s-page-content">
+  <article class="m-agenda" *ngIf="chosenArchive">
+    <div class="s-nav">
+      <a class="s-back-link" routerLink="/" translate>backReference</a>
+      <div class="s-nav-meetup">
+        <a
+          class="s-left-link"
+          *ngIf="archivePrevNext.prev"
+          [routerLink]="['/archive',archivePrevNext.prev.id]"
+        >{{archivePrevNext.prev.name}}</a>
+        <a
+          class="s-right-link"
+          *ngIf="archivePrevNext.next"
+          [routerLink]="['/archive',archivePrevNext.next.id]"
+        >{{archivePrevNext.next.name}}</a>
+      </div>
+    </div>
+    <div class="s-content">
+      <div class="s-heading">
+        <span class="s-date">{{chosenArchive.date}}</span>
+        <a class="s-event-link" href="https://goo.gl/4sUCnx" target="_blank" rel="noopener">{{chosenArchive.fullLocation}}<span class="s-icon"></span></a>
+      </div>
+      <span class="s-title" translate>agenda {{chosenArchive.name}}</span>
+      <app-speaker-item *ngFor="let speaker of chosenArchive.speakers" [speakerItem]="speaker"> Speaker: {{speaker}}</app-speaker-item>
+      <div class="s-archive-photos">
+        <div *ngFor="let image of chosenArchive.images; let index=index" class="s-photo">
+          <a *ngIf="index !== 3; else lastImage" href="../../assets/{{image.url}}" data-lightbox="image-meetup"><img alt="{{image.title}}" src="../../assets/{{image.url}}"></a>
+
+          <ng-template #lastImage>
+            <a href="../../assets/{{image.url}}" data-lightbox="image-meetup"></a>
+            <a href="https://web.facebook.com/groups/AEMBelarus/permalink/1072448256266902/?_rdc=10&amp;_rdr" target="_blank" rel="noopener">
+              <span class="s-facebook" translate>facebookReference</span></a>
+            <img alt="{{image.title}}" title="{{image.title}}" id="mask" src="../../assets/{{image.url}}">
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>

@@ -1,0 +1,58 @@
+.s-entry {
+  border-top: 2px solid rgba(79, 79, 79, 0.2);
+  padding: 2.09375rem 0;
+  display: flex;
+  width: 100%; }
+  .s-entry .s-col--avatar {
+    width: 9.375rem;
+    box-sizing: content-box;
+    padding-left: 0.625rem;
+    padding-right: 1.25rem; }
+    .s-entry .s-col--avatar .s-avatar {
+      display: block;
+      width: 9.375rem;
+      height: 9.375rem; }
+      .s-entry .s-col--avatar .s-avatar img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; }
+  .s-entry .s-col {
+    vertical-align: top; }
+    .s-entry .s-col .s-topic {
+      display: block;
+      font-family: "Circe Bold", serif;
+      font-size: 1.375rem;
+      text-transform: uppercase;
+      line-height: 1.65rem; }
+    .s-entry .s-col .s-name {
+      display: block;
+      color: rgba(0, 0, 0, 0.4);
+      font-family: "Futura New Book", serif;
+      font-size: 1.3125rem;
+      line-height: 1.64063rem;
+      margin-bottom: 1.05rem; }
+    .s-entry .s-col .s-info {
+      display: block;
+      font-family: "Futura New Book", serif;
+      font-size: 1.3125rem;
+      line-height: 1.64063rem; }
+    .s-entry .s-col .s-pdf {
+      margin-top: 20px; }
+      .s-entry .s-col .s-pdf .s-link-pdf {
+        text-decoration: none;
+        color: #f58220; }
+      .s-entry .s-col .s-pdf img {
+        margin-top: -6px;
+        vertical-align: middle;
+        margin-right: 3px; }
+    .s-entry .s-col .s-youtube {
+      margin-top: 20px; }
+      .s-entry .s-col .s-youtube .s-link-youtube {
+        text-decoration: none;
+        color: #f58220; }
+        .s-entry .s-col .s-youtube .s-link-youtube img {
+          margin-top: -6px;
+          vertical-align: middle;
+          margin-right: 3px; }
+
+/*# sourceMappingURL=speaker-item.component.css.map */

@@ -1,0 +1,78 @@
+@mixin fonts($base-path: '') {
+	@font-face {
+		font-family: 'SF UI Text';
+		src: url('#{$base-path}SFUIText-Light.eot');
+		src: url('#{$base-path}SFUIText-Light.eot?#iefix') format('embedded-opentype'),
+		url('#{$base-path}SFUIText-Light.woff2') format('woff2'),
+		url('#{$base-path}SFUIText-Light.woff') format('woff'),
+		url('#{$base-path}SFUIText-Light.ttf') format('truetype'),
+		url('#{$base-path}SFUIText-Light.svg#SFUIText-Light') format('svg');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Futura New Light';
+		src: url('#{$base-path}FuturaNewLight-Reg.eot');
+		src: url('#{$base-path}FuturaNewLight-Reg.eot?#iefix') format('embedded-opentype'),
+		url('#{$base-path}FuturaNewLight-Reg.woff2') format('woff2'),
+		url('#{$base-path}FuturaNewLight-Reg.woff') format('woff'),
+		url('#{$base-path}FuturaNewLight-Reg.ttf') format('truetype'),
+		url('#{$base-path}FuturaNewLight-Reg.svg#FuturaNewLight-Reg') format('svg');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Futura New Demi';
+		src: url('#{$base-path}FuturaNewDemi-Reg.eot');
+		src: url('#{$base-path}FuturaNewDemi-Reg.eot?#iefix') format('embedded-opentype'),
+		url('#{$base-path}FuturaNewDemi-Reg.woff2') format('woff2'),
+		url('#{$base-path}FuturaNewDemi-Reg.woff') format('woff'),
+		url('#{$base-path}FuturaNewDemi-Reg.ttf') format('truetype'),
+		url('#{$base-path}FuturaNewDemi-Reg.svg#FuturaNewDemi-Reg') format('svg');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Futura New Medium';
+		src: url('#{$base-path}FuturaNewMedium-Reg.eot');
+		src: url('#{$base-path}FuturaNewMedium-Reg.eot?#iefix') format('embedded-opentype'),
+		url('#{$base-path}FuturaNewMedium-Reg.woff2') format('woff2'),
+		url('#{$base-path}FuturaNewMedium-Reg.woff') format('woff'),
+		url('#{$base-path}FuturaNewMedium-Reg.ttf') format('truetype'),
+		url('#{$base-path}FuturaNewMedium-Reg.svg#FuturaNewMedium-Reg') format('svg');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Futura New Book';
+		src: url('#{$base-path}FuturaNewBook-Reg.eot');
+		src: url('#{$base-path}FuturaNewBook-Reg.eot?#iefix') format('embedded-opentype'),
+		url('#{$base-path}FuturaNewBook-Reg.woff2') format('woff2'),
+		url('#{$base-path}FuturaNewBook-Reg.woff') format('woff'),
+		url('#{$base-path}FuturaNewBook-Reg.ttf') format('truetype'),
+		url('#{$base-path}FuturaNewBook-Reg.svg#FuturaNewBook-Reg') format('svg');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Circe Bold';
+		src: url('#{$base-path}Circe-Bold.eot');
+		src: url('#{$base-path}Circe-Bold.eot?#iefix') format('embedded-opentype'),
+		url('#{$base-path}Circe-Bold.woff2') format('woff2'),
+		url('#{$base-path}Circe-Bold.woff') format('woff'),
+		url('#{$base-path}Circe-Bold.ttf') format('truetype'),
+		url('#{$base-path}Circe-Bold.svg#Circe-Bold') format('svg');
+		font-display: swap;
+	}
+
+  @font-face {
+    font-family: 'Circe Extra Light';
+    src: url('#{$base-path}Circe-ExtraLight.eot');
+    src: url('#{$base-path}Circe-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('#{$base-path}Circe-ExtraLight.woff2') format('woff2'),
+    url('#{$base-path}Circe-ExtraLight.woff') format('woff'),
+    url('#{$base-path}Circe-ExtraLight.ttf') format('truetype'),
+    url('#{$base-path}Circe-ExtraLight.svg#Circe-ExtraLight') format('svg');
+    font-display: swap;
+  }
+}

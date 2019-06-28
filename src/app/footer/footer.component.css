@@ -1,0 +1,66 @@
+.s-footer-social-icons {
+  justify-content: center;
+  display: flex;
+  padding: 0 1.25rem;
+  text-align: center; }
+  .s-footer-social-icons .s-icon-link {
+    display: inline-block;
+    width: 3.125rem;
+    height: 3.125rem;
+    margin: 0 1.03125rem;
+    border: none; }
+    .s-footer-social-icons .s-icon-link svg {
+      width: 100%;
+      height: 100%;
+      fill: rgba(255, 255, 255, 0.2); }
+
+.s-footer-copyright {
+  font-family: "Futura New Light", serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  text-align: center;
+  line-height: 3.625rem; }
+  .s-footer-copyright .s-word {
+    display: inline-block; }
+  .s-footer-copyright a {
+    text-decoration: none; }
+    .s-footer-copyright a:link, .s-footer-copyright a:active, .s-footer-copyright a:visited, .s-footer-copyright a:hover {
+      color: rgba(255, 255, 255, 0.5); }
+
+.s-footer-logos {
+  display: flex;
+  height: 1px;
+  min-width: 320px;
+  max-width: 1505px;
+  margin: 0 auto;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 0;
+  width: 100%;
+  justify-content: space-between; }
+  .s-footer-logos .s-axamit-logo img {
+    margin-top: 0.75rem;
+    margin-right: 4.6875rem;
+    width: 13.875rem;
+    height: 1.625rem; }
+  .s-footer-logos .s-partner-logo {
+    display: flex; }
+    .s-footer-logos .s-partner-logo img {
+      margin-left: 3.75rem;
+      height: 3.125rem; }
+    .s-footer-logos .s-partner-logo span {
+      font-family: "Futura New Light", serif;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 500;
+      line-height: 3.125rem;
+      margin-left: 0.625rem; }
+
+.m-footer {
+  height: 7.375rem;
+  margin-top: -7.375rem;
+  position: relative; }
+
+/*# sourceMappingURL=footer.component.css.map */

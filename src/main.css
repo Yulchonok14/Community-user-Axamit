@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'SF UI Text';
+  src: url("./assets/fonts/SFUIText-Light.eot");
+  src: url("./assets/fonts/SFUIText-Light.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/SFUIText-Light.woff2") format("woff2"), url("./assets/fonts/SFUIText-Light.woff") format("woff"), url("./assets/fonts/SFUIText-Light.ttf") format("truetype"), url("./assets/fonts/SFUIText-Light.svg#SFUIText-Light") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Futura New Light';
+  src: url("./assets/fonts/FuturaNewLight-Reg.eot");
+  src: url("./assets/fonts/FuturaNewLight-Reg.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/FuturaNewLight-Reg.woff2") format("woff2"), url("./assets/fonts/FuturaNewLight-Reg.woff") format("woff"), url("./assets/fonts/FuturaNewLight-Reg.ttf") format("truetype"), url("./assets/fonts/FuturaNewLight-Reg.svg#FuturaNewLight-Reg") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Futura New Demi';
+  src: url("./assets/fonts/FuturaNewDemi-Reg.eot");
+  src: url("./assets/fonts/FuturaNewDemi-Reg.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/FuturaNewDemi-Reg.woff2") format("woff2"), url("./assets/fonts/FuturaNewDemi-Reg.woff") format("woff"), url("./assets/fonts/FuturaNewDemi-Reg.ttf") format("truetype"), url("./assets/fonts/FuturaNewDemi-Reg.svg#FuturaNewDemi-Reg") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Futura New Medium';
+  src: url("./assets/fonts/FuturaNewMedium-Reg.eot");
+  src: url("./assets/fonts/FuturaNewMedium-Reg.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/FuturaNewMedium-Reg.woff2") format("woff2"), url("./assets/fonts/FuturaNewMedium-Reg.woff") format("woff"), url("./assets/fonts/FuturaNewMedium-Reg.ttf") format("truetype"), url("./assets/fonts/FuturaNewMedium-Reg.svg#FuturaNewMedium-Reg") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Futura New Book';
+  src: url("./assets/fonts/FuturaNewBook-Reg.eot");
+  src: url("./assets/fonts/FuturaNewBook-Reg.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/FuturaNewBook-Reg.woff2") format("woff2"), url("./assets/fonts/FuturaNewBook-Reg.woff") format("woff"), url("./assets/fonts/FuturaNewBook-Reg.ttf") format("truetype"), url("./assets/fonts/FuturaNewBook-Reg.svg#FuturaNewBook-Reg") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Circe Bold';
+  src: url("./assets/fonts/Circe-Bold.eot");
+  src: url("./assets/fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Circe-Bold.woff2") format("woff2"), url("./assets/fonts/Circe-Bold.woff") format("woff"), url("./assets/fonts/Circe-Bold.ttf") format("truetype"), url("./assets/fonts/Circe-Bold.svg#Circe-Bold") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Circe Extra Light';
+  src: url("./assets/fonts/Circe-ExtraLight.eot");
+  src: url("./assets/fonts/Circe-ExtraLight.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Circe-ExtraLight.woff2") format("woff2"), url("./assets/fonts/Circe-ExtraLight.woff") format("woff"), url("./assets/fonts/Circe-ExtraLight.ttf") format("truetype"), url("./assets/fonts/Circe-ExtraLight.svg#Circe-ExtraLight") format("svg");
+  font-display: swap; }
+body {
+  background-color: #140f10; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+@import './assets/sass/variables';
+
+@import './assets/fonts/stylesheet';
+@include fonts('./assets/fonts/');
+
+@import './assets/sass/hamburgers/hamburgers';
+
+
+body {
+  background-color: #140f10;
+}
+
+html {
+  min-height: 100%;
+  line-height: 100%;
+  font-family: sans-serif;
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 16px;
+  }
+}
